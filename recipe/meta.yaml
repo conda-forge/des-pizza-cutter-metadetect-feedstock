@@ -51,7 +51,7 @@ test:
     - pizza_cutter_metadetect
   commands:
     - run-metadetect-on-slices --help
-    - python -c "import pizza_cutter; assert pizza_cutter.__version__ == '{{ version }}'"
+    - python -c "import pizza_cutter_metadetect; assert pizza_cutter_metadetect.__version__ == '{{ version }}'"
 
 about:
   home: https://github.com/beckermr/pizza-cutter-metadetect
