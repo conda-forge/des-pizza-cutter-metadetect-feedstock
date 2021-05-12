@@ -1,5 +1,5 @@
 {% set name = "des-pizza-cutter-metadetect" %}
-{% set version = "0.3.4" %}
+{% set version = "0.3.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/beckermr/pizza-cutter-metadetect/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 22e7dd19bd04bb3840934b1630951165578c255a785611a08767c1771fed0e8b
+  sha256: 2552933646805b193a2a2ab176e50a97c89ff5ac992246fbbfda498d918adb2b
 
 build:
   # this recipe is not noarch due to using the scripts kwarg w/ setuptools
-  skip: True  # [win]
+  skip: true  # [win]
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -58,7 +58,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'code to run metadetect on pizza cutter MEDs files'
+  summary: code to run metadetect on pizza cutter MEDs files
 
 extra:
   recipe-maintainers:
