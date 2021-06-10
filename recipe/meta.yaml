@@ -31,7 +31,7 @@ requirements:
     - numba
     - des-easyaccess
     - des-desmeds
-    - meds
+    - meds >=0.9.14
     - ngmix
     - click
     - esutil
@@ -42,7 +42,7 @@ requirements:
     - piff
     - cfitsio
     - metadetect >=0.3.6
-    - des-pizza-cutter
+    - des-pizza-cutter >=0.3.2
     - des-sxdes
     - importlib_metadata
 
