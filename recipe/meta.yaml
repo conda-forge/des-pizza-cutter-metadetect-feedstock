@@ -12,7 +12,7 @@ source:
 build:
   # this recipe is not noarch due to using the scripts kwarg w/ setuptools
   skip: true  # [win]
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -41,7 +41,7 @@ requirements:
     - tqdm
     - piff
     - cfitsio
-    - metadetect
+    - metadetect >=0.3.6
     - des-pizza-cutter
     - des-sxdes
     - importlib_metadata
