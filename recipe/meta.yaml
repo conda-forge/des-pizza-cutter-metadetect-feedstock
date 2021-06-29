@@ -45,6 +45,7 @@ requirements:
     - des-pizza-cutter >=0.3.2
     - des-sxdes
     - importlib_metadata
+    - healsparse >=1.3.0
 
 test:
   imports:
