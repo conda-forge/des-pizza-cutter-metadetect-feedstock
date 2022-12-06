@@ -1,5 +1,5 @@
 {% set name = "des-pizza-cutter-metadetect" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/beckermr/pizza-cutter-metadetect/archive/refs/tags/{{ version }}.tar.gz
-  sha256: c58a4c8d05d497ff050287d028b63f75663aa6ac6fe1f1141f0f2b95e7d05a21
+  sha256: 4c826b9850a543db31d8c3061f6b791465106958fa380cfc0a72f168de1e62ee
 
 build:
   # this recipe is not noarch due to using the scripts kwarg w/ setuptools
