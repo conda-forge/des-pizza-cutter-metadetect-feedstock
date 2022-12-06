@@ -1,5 +1,5 @@
 {% set name = "des-pizza-cutter-metadetect" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/beckermr/pizza-cutter-metadetect/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 61577dc14e4ef29d8ab296a68e0e1f2364c0c15b24ab5be81c43c80e10dfe845
+  sha256: c58a4c8d05d497ff050287d028b63f75663aa6ac6fe1f1141f0f2b95e7d05a21
 
 build:
   # this recipe is not noarch due to using the scripts kwarg w/ setuptools
@@ -19,7 +19,7 @@ requirements:
   host:
     - python
     - pip
-    - setuptools_scm !=6.3.1
+    - setuptools_scm
     - setuptools_scm_git_archive
   run:
     - python
@@ -32,7 +32,7 @@ requirements:
     - healpy
     - des-easyaccess
     - des-desmeds
-    - meds >=0.9.14
+    - meds >=0.9.16
     - ngmix >=2.3.0
     - click
     - esutil
@@ -42,7 +42,7 @@ requirements:
     - tqdm
     - piff
     - cfitsio
-    - metadetect >=0.10.0,<0.11.0a0
+    - metadetect >=0.11.0,<0.12.0a0
     - des-pizza-cutter >=0.7.1
     - des-sxdes >=0.3.0
     - importlib_metadata
