@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/beckermr/pizza-cutter-metadetect/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5 
+  sha256: c58a4c8d05d497ff050287d028b63f75663aa6ac6fe1f1141f0f2b95e7d05a21
 
 build:
   # this recipe is not noarch due to using the scripts kwarg w/ setuptools
